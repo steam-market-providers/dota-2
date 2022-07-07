@@ -1,8 +1,8 @@
-# Counter-Strike: Global Offensive provider. Steam market items parser.
+# Dota 2 provider. Steam market items parser.
 
 ### Install
 ```bash
-composer require steam-market-providers/cs-go
+composer require steam-market-providers/dota-2
 ```
 
 ### How use
@@ -15,7 +15,7 @@ SteamParserFactory::create()
             ->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.1) Gecko/20061204 Firefox/2.0.0.1')
             ->setTimeout(10)
     ))
-    ->setTemplateMethod(new CsGO())
+    ->setTemplateMethod(new Dota2Provider())
     ->run(1);
 ```
 
